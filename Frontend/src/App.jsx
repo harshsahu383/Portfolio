@@ -40,8 +40,9 @@ const SKILLS = [
   { name: 'Tailwind', icon: '/icons/tailwind.png' },
   { name: 'Git', icon: '/icons/git.png' },
   { name: 'DSA', icon: '/icons/dsa.png' },
-  { name: 'Firebase', icon: '/icons/firebase.png' }
+  { name: 'Firebase', icon: '/icons/firebase.png' },
 ];
+
 
 
 export default function App() {
