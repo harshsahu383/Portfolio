@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Skills from './components/Skills';
 const PROJECTS = [
   {
     id: 1,
@@ -42,6 +42,7 @@ const SKILLS = [
   { name: 'DSA', icon: '/icons/dsa.png' },
   { name: 'Firebase', icon: '/icons/firebase.png' }
 ];
+
 
 export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
@@ -189,16 +190,8 @@ export default function App() {
 
         {}
         <section id="skills" className="mt-10">
-          <h3 className="text-xl font-semibold">Skills</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Technologies and tools I use regularly.</p>
-          <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-            {SKILLS.map(s => (
-              <div key={s.name} className="bg-white/80 dark:bg-gray-800 p-3 rounded-xl flex flex-col items-center gap-2 shadow-sm">
-                <img src={s.icon} alt={`${s.name} icon`} className="w-12 h-12 object-contain" onError={(e)=>{ e.currentTarget.src = '/icons/placeholder.png'; }} />
-                <div className="text-sm font-medium">{s.name}</div>
-              </div>
-            ))}
-          </div>
+          {/* <h3 className="text-xl font-semibold">Skills</h3> */}
+          <Skills skills={SKILLS} defaultVisible={5} />
         </section>
 
         {}
