@@ -31,7 +31,7 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { name: 'JavaScript', icon: '/icons/js.png' },
+  { name: 'JavaScript', icon: '/icons/image.png' },
   { name: 'React', icon: '/icons/react.png' },
   { name: 'Node.js', icon: '/icons/node.png' },
   { name: 'Express', icon: '/icons/express.png' },
