@@ -31,16 +31,16 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { name: 'JavaScript', icon: '/icons/image.png' },
+  { name: 'JavaScript', icon: '/icons/javascript.png' },
   { name: 'React', icon: '/icons/react.png' },
   { name: 'Node.js', icon: '/icons/node.png' },
-  { name: 'Express', icon: '/icons/express.png' },
+  { name: 'Mysql', icon: '/icons/mysql.png' },
   { name: 'MongoDB', icon: '/icons/mongo.png' },
   { name: 'HTML/CSS', icon: '/icons/htmlcss.png' },
   { name: 'Tailwind', icon: '/icons/tailwind.png' },
-  { name: 'Git', icon: '/icons/git.png' },
+  { name: 'Github', icon: '/icons/github.png' },
   { name: 'DSA', icon: '/icons/dsa.png' },
-  { name: 'Firebase', icon: '/icons/firebase.png' },
+  { name: 'Git', icon: '/icons/git.png' },
 ];
 
 

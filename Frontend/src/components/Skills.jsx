@@ -34,7 +34,7 @@ export default function Skills({ skills = [], defaultVisible = 5 }) {
               animationDelay: `${index * 100}ms`,
             }}
           >
-            {/* CLEAN ICON — no white background */}
+            {}
             <img
               src={skill.icon}
               alt={skill.name}
@@ -42,7 +42,8 @@ export default function Skills({ skills = [], defaultVisible = 5 }) {
               onError={(e) => (e.currentTarget.src = "/icons/placeholder.png")}
             />
 
-            <p className="text-sm font-medium text-gray-200 dark:text-gray-100">
+            <p className="text-sm font-medium text-gray-900 dark:text-white">
+
               {skill.name}
             </p>
           </div>
