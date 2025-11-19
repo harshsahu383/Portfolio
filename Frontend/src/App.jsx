@@ -43,6 +43,8 @@ const SKILLS = [
   { name: 'Github', icon: '/icons/github.png' },
   { name: 'DSA', icon: '/icons/dsa.png' },
   { name: 'Git', icon: '/icons/git.png' },
+  { name: 'Java', icon: '/icons/java.png' },
+  { name: 'Postman', icon: '/icons/postman.png' },
 ];
 
 
