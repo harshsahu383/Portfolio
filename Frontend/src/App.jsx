@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Skills from './components/Skills';
+import ProfileImage from './components/ProfileImage';
+
 const PROJECTS = [
   {
     id: 1,
@@ -158,8 +160,13 @@ export default function App() {
 
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-2xl overflow-hidden shadow-2xl">
-              <img src="images/profile3.jpeg" id='profile-image' alt="Harsh profile" className="w-full h-full object-cover" />
-            </div>
+  <ProfileImage
+    lightSrc="/images/profile1.jpeg"
+    darkSrc="/images/profile3.jpeg"
+    alt="Harsh Sahu"
+    className=""
+  />
+</div>
           </div>
         </section>
 
@@ -250,6 +257,28 @@ export default function App() {
             </div>
           )}
         </section>
+        {}
+        <section id="resume" className="mt-10 bg-white/5 dark:bg-gray-900/50 p-6 rounded-xl shadow-md">
+  <div className="md:flex md:items-center md:justify-between">
+    <div>
+      <h3 className="text-xl font-semibold">Resume</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Download my resume to see detailed experience and projects.</p>
+    </div>
+
+    <div className="mt-4 md:mt-0 flex gap-3 items-center">
+      <a href="resume/resume.pdf" download className="btn-download">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+        Download Resume
+      </a>
+
+      <a href="resume/resume.pdf" target="_blank" rel="noreferrer" className="px-4 py-2 border rounded-md text-sm">
+        View PDF
+      </a>
+    </div>
+  </div>
+</section>
 
         {}
         <section id="contact" className="mt-10">
