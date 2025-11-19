@@ -150,15 +150,15 @@ export default function App() {
             <div className="mt-6 flex gap-3 items-center text-sm">
               <a href="https://github.com/harshsahu383" target="_blank" rel="noreferrer" className="underline">GitHub</a>
               <span className="opacity-40">•</span>
-              <a href="https://leetcode.com/harsh_sahu" target="_blank" rel="noreferrer" className="underline">LeetCode</a>
+              <a href="https://leetcode.com/u/harshsahu383_/" target="_blank" rel="noreferrer" className="underline">LeetCode</a>
               <span className="opacity-40">•</span>
-              <a href="https://linkedin.com/in/harsh-sahu" target="_blank" rel="noreferrer" className="underline">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/harshsahu383/" target="_blank" rel="noreferrer" className="underline">LinkedIn</a>
             </div>
           </div>
 
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-2xl overflow-hidden shadow-2xl">
-              <img src="/profile.jpg" alt="Harsh profile" className="w-full h-full object-cover" />
+              <img src="images/profile3.jpeg" id='profile-image' alt="Harsh profile" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
@@ -304,5 +304,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500 dark:text-gray-400 mt-6">© {new Date().getFullYear()} Harsh Sahu — Built with React & Node</div>
       </footer>
     </div>
+    
   );
 }
+<script src='/imagetoggle.js'></script>
