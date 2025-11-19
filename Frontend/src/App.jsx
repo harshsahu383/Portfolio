@@ -98,10 +98,10 @@ export default function App() {
       <header className="sticky top-0 z-40 backdrop-blur-md bg-white/60 dark:bg-gray-900/60 border-b">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/profile.jpg" alt="Harsh Sahu" className="w-11 h-11 rounded-full border" />
+            <img src="/images/profile1.jpeg" alt="Harsh Sahu" className="w-11 h-11 rounded-full border" />
             <div>
               <div className="text-lg font-semibold">Harsh Sahu</div>
-              <div className="text-xs text-gray-600 dark:text-gray-300">Full-Stack Developer • MERN</div>
+              <div className="text-xs text-gray-600 dark:text-gray-300">SDE • Full-Stack • (MERN)</div>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ export default function App() {
             <a href="#skills" className="hover:underline">Skills</a>
             <a href="#projects" className="hover:underline">Projects</a>
             <a href="#resume" className="hover:underline">Resume</a>
-            <a href="#contact" className="px-3 py-1 bg-blue-600 text-white rounded-md">Contact</a>
+            <a href="#contact" className="px-3 py-1 bg-blue-600 text-white rounded-md dark:bg-blue-900">Contact</a>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -140,15 +140,15 @@ export default function App() {
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I’m Harsh — I build clean, scalable web apps</h1>
-            <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">I specialise in MERN stack and ship production-ready projects focused on performance, accessibility and maintainability.</p>
+            <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">"Leveraging the power of MongoDB, Express.js, React, and Node.js, I engineer modern web applications that are responsive and performant."</p>
 
             <div className="mt-6 flex gap-4">
-              <a href="#projects" className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-md shadow">See my work</a>
-              <a href="mailto:harsh.sahu@example.com" className="px-4 py-2 border rounded-md">Email me</a>
+              <a href="#projects" className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-md shadow dark:bg-gradient-to-r from-indigo-700 to-blue-900 ">See my work</a>
+              <a href="mailto:harshsahu1917@gmail.com" className="px-4 py-2 border rounded-md">Email me</a>
             </div>
 
             <div className="mt-6 flex gap-3 items-center text-sm">
-              <a href="https://github.com/harshsahu1917" target="_blank" rel="noreferrer" className="underline">GitHub</a>
+              <a href="https://github.com/harshsahu383" target="_blank" rel="noreferrer" className="underline">GitHub</a>
               <span className="opacity-40">•</span>
               <a href="https://leetcode.com/harsh_sahu" target="_blank" rel="noreferrer" className="underline">LeetCode</a>
               <span className="opacity-40">•</span>
@@ -191,7 +191,7 @@ export default function App() {
 
         {}
         <section id="skills" className="mt-10">
-          {/* <h3 className="text-xl font-semibold">Skills</h3> */}
+          {}
           <Skills skills={SKILLS} defaultVisible={5} />
         </section>
 
