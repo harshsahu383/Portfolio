@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Skills from './components/Skills';
+
 import ProfileImage from './components/ProfileImage';
 
 const PROJECTS = [
@@ -32,23 +33,26 @@ const PROJECTS = [
   }
 ];
 
-const SKILLS = [
+const TECHNOLOGIES = [
   { name: 'JavaScript', icon: '/icons/javascript.png' },
   { name: 'React', icon: '/icons/react.png' },
   { name: 'Node.js', icon: '/icons/node.png' },
-  { name: 'Mysql', icon: '/icons/mysql.png' },
+  { name: 'MySql', icon: '/icons/mysql.png' },
   { name: 'MongoDB', icon: '/icons/mongo.png' },
   { name: 'HTML/CSS', icon: '/icons/htmlcss.png' },
-  { name: 'Tailwind', icon: '/icons/tailwind.png' },
-  { name: 'Github', icon: '/icons/github.png' },
+  { name: 'TailwindCSS', icon: '/icons/tailwind.png' },
   { name: 'DSA', icon: '/icons/dsa.png' },
-  { name: 'Git', icon: '/icons/git.png' },
-  { name: 'Java', icon: '/icons/java.png' },
-  { name: 'Postman', icon: '/icons/postman.png' },
-  { name: 'Postman', icon: '/icons/postman.png' },
-  { name: 'Postman', icon: '/icons/postman.png' },
-  { name: 'Postman', icon: '/icons/postman.png' },
+  { name: 'DSA', icon: '/icons/dsa.png' },
 ];
+
+const TOOLS = [
+  { name: 'Git', icon: '/icons/git.png' },
+  { name: 'GitHub', icon: '/icons/github.png' },
+  { name: 'VS Code', icon: '/icons/vscode.png' },
+  { name: 'Postman', icon: '/icons/postman.png' },
+  { name: 'Figma', icon: '/icons/figma.png' },
+];
+
 
 
 
@@ -204,7 +208,8 @@ export default function App() {
         {}
         <section id="skills" className="mt-10">
           {}
-          <Skills skills={SKILLS} defaultVisible={5} />
+          <Skills tech={TECHNOLOGIES} tools={TOOLS} />
+
         </section>
 
         {}
