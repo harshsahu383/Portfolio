@@ -42,7 +42,12 @@ const TECHNOLOGIES = [
   { name: 'HTML/CSS', icon: '/icons/htmlcss.png' },
   { name: 'TailwindCSS', icon: '/icons/tailwind.png' },
   { name: 'DSA', icon: '/icons/dsa.png' },
-  { name: 'DSA', icon: '/icons/dsa.png' },
+  { name: 'Python', icon: '/icons/python.png' },
+  { name: 'Boostrap', icon: '/icons/boostrap.png' },
+  { name: 'Redux', icon: '/icons/redux.png' },
+  { name: 'Express', icon: '/icons/express.png' },
+  { name: 'C', icon: '/icons/c.png' },
+  { name: 'C++', icon: '/icons/cc.png' },
 ];
 
 const TOOLS = [
@@ -51,6 +56,8 @@ const TOOLS = [
   { name: 'VS Code', icon: '/icons/vscode.png' },
   { name: 'Postman', icon: '/icons/postman.png' },
   { name: 'Figma', icon: '/icons/figma.png' },
+  { name: 'Vercel', icon: '/icons/vercel.png' },
+
 ];
 
 
