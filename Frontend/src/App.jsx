@@ -1,36 +1,54 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 import ProfileImage from './components/ProfileImage';
 
 const PROJECTS = [
   {
     id: 1,
-    title: 'Wonderlust - Travel Clone',
-    description: 'Full-stack Airbnb-like app with authentication, image uploads and bookings.',
-    tech: ['React', 'Node', 'Express', 'MongoDB'],
-    image: '/projects/wonderlust.jpg',
-    live: '#',
-    src: 'https://github.com/harshsahu1917/wonderlust'
+    title: 'Wonderlust',
+    description: 'Airbnb-like clone with auth and bookings.',
+    tech: ['React','Node','MongoDB'],
+    images: ['/projects/wonderlust.png','/projects/wonderlust-2.jpg'],
+    video: '/projects/wonderlust.mp4',
+    poster: '/projects/wonderlust.png',
+    live: 'https://wonderlust.example.com',
+    src: 'https://github.com/yourname/wonderlust'
   },
   {
     id: 2,
-    title: 'PG-Life',
-    description: 'Find affordable PG accommodations with filters and map integration.',
-    tech: ['React', 'PHP', 'MySQL'],
-    image: '/projects/pglife.jpg',
+    title: 'Netflix Clone',
+    description: 'Streaming UI demo.',
+    tech: ['React','Firebase'],
+    images: ['/projects/netflix-1.jpg'],
+    video: '/projects/netflix-demo.mp4',
+    poster: '/projects/netflix-poster.jpg',
     live: '#',
-    src: 'https://github.com/harshsahu1917/pg-life'
+    src: 'https://github.com/yourname/netflix-clone'
   },
   {
     id: 3,
     title: 'Netflix Clone',
-    description: 'Responsive streaming UI with saved lists and Firebase auth.',
-    tech: ['React', 'Firebase', 'CSS Grid'],
-    image: '/projects/netflixclone.jpg',
+    description: 'Streaming UI demo.',
+    tech: ['React','Firebase'],
+    images: ['/projects/netflix-1.jpg'],
+    video: '/projects/netflix-demo.mp4',
+    poster: '/projects/netflix-poster.jpg',
     live: '#',
-    src: 'https://github.com/harshsahu1917/netflix-clone'
-  }
+    src: 'https://github.com/yourname/netflix-clone'
+  }, 
+  {
+    id: 3,
+    title: 'Netflix Clone',
+    description: 'Streaming UI demo.',
+    tech: ['React','Firebase'],
+    images: ['/projects/netflix-1.jpg'],
+    video: '/projects/netflix-demo.mp4',
+    poster: '/projects/netflix-poster.jpg',
+    live: '#',
+    src: 'https://github.com/yourname/netflix-clone'
+  }, 
 ];
 
 const TECHNOLOGIES = [
@@ -224,60 +242,8 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
         </section>
 
         {}
-        <section id="projects" className="mt-10">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold">Selected Projects</h3>
-            <a href="https://github.com/harshsahu1917" target="_blank" rel="noreferrer" className="text-sm text-indigo-600">View all on GitHub</a>
-          </div>
+       <Projects projects={PROJECTS} />
 
-          <div className="mt-4 grid sm:grid-cols-2 gap-6">
-            {PROJECTS.map(p => (
-              <article key={p.id} className="bg-white/80 dark:bg-gray-900/70 rounded-xl overflow-hidden shadow-lg flex flex-col">
-                <img src={p.image} alt={p.title} className="h-40 w-full object-cover" onError={(e)=>{ e.currentTarget.src = '/projects/placeholder.jpg'; }} />
-                <div className="p-4 flex-1 flex flex-col">
-                  <h4 className="font-semibold text-lg">{p.title}</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2 flex-1">{p.description}</p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {p.tech.map(t => <span key={t} className="text-xs px-2 py-1 border rounded-full">{t}</span>)}
-                  </div>
-                  <div className="mt-4 flex gap-3">
-                    <button onClick={() => setProjectPreview(p)} className="text-sm underline">Preview</button>
-                    <a href={p.src} target="_blank" rel="noreferrer" className="text-sm underline">Source</a>
-                    <a href={p.live} target="_blank" rel="noreferrer" className="text-sm underline">Live</a>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          {}
-          {projectPreview && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-              <div className="bg-white dark:bg-gray-900 rounded-xl max-w-3xl w-full overflow-hidden shadow-2xl">
-                <div className="p-4 flex items-start justify-between">
-                  <h4 className="font-semibold">{projectPreview.title || 'Project Preview'}</h4>
-                  <button onClick={() => setProjectPreview(null)} className="text-sm px-2 py-1 border rounded">Close</button>
-                </div>
-                <div className="w-full h-64 bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
-                  <img
-                    src={projectPreview.image || '/projects/placeholder.jpg'}
-                    alt={projectPreview.title || 'project image'}
-                    className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.src = '/projects/placeholder.jpg'; }}
-                  />
-                </div>
-                <div className="p-4 text-sm text-gray-700 dark:text-gray-300">
-                  <p>{projectPreview.description || 'No description available.'}</p>
-                  <div className="mt-3">Tech: {(projectPreview.tech || []).join(', ')}</div>
-                  <div className="mt-4 flex gap-3">
-                    {projectPreview.src && <a href={projectPreview.src} target="_blank" rel="noreferrer" className="underline">Source</a>}
-                    {projectPreview.live && <a href={projectPreview.live} target="_blank" rel="noreferrer" className="underline">Live</a>}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-        </section>
         {}
         <section id="resume" className="mt-10 bg-white/5 dark:bg-gray-900/50 p-6 rounded-xl shadow-md">
   <div className="md:flex md:items-center md:justify-between">
