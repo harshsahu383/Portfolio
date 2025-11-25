@@ -9,45 +9,40 @@ const PROJECTS = [
     id: 1,
     title: 'Wonderlust',
     description: 'Airbnb-like clone with auth and bookings.',
-    tech: ['React','Node','MongoDB'],
-    images: ['/projects/wonderlust.png','/projects/wonderlust-2.jpg'],
-    video: '/projects/wonderlust.mp4',
-    poster: '/projects/wonderlust.png',
-    live: 'https://wonderlust.example.com',
-    src: 'https://github.com/yourname/wonderlust'
+    tech: ['Javascript', 'Html', 'Css','Boostrap','Node','MongoDB', 'Express'],
+    video: '/projects/videos/wonderlust.mp4',
+    poster: '/projects/images/wonderlust.png',
+    live: 'https://wonderlust-project-h2g6.onrender.com/listings',
+    src: 'https://github.com/harshsahu383/Airbnb-Clone'
   },
   {
     id: 2,
     title: 'Netflix Clone',
     description: 'Streaming UI demo.',
-    tech: ['React','Firebase'],
-    images: ['/projects/netflix-1.jpg'],
-    video: '/projects/netflix-demo.mp4',
-    poster: '/projects/netflix-poster.jpg',
-    live: '#',
-    src: 'https://github.com/yourname/netflix-clone'
+    tech: ['Html','Css','Boostrap',],
+    video: '/projects/videos/netflix.mp4',
+    poster: '/projects/images/netflix.png',
+    live: 'https://netzx.netlify.app/',
+    src: 'https://github.com/harshsahu383/Netflix-clone'
   },
   {
     id: 3,
-    title: 'Netflix Clone',
-    description: 'Streaming UI demo.',
-    tech: ['React','Firebase'],
-    images: ['/projects/netflix-1.jpg'],
-    video: '/projects/netflix-demo.mp4',
-    poster: '/projects/netflix-poster.jpg',
-    live: '#',
-    src: 'https://github.com/yourname/netflix-clone'
+    title: 'To-Do-List App',
+    description: 'Managing Day To Day Tasks.',
+    tech: ['Html','Css', 'Javascript'],
+    video: '/projects/videos/todo.mp4',
+    poster: '/projects/images/todo.png',
+    live: 'https://to-do-hs.netlify.app/',
+    src: 'https://github.com/harshsahu383/TO-DO-LIST-APP'
   }, 
   {
-    id: 3,
-    title: 'Netflix Clone',
-    description: 'Streaming UI demo.',
-    tech: ['React','Firebase'],
-    images: ['/projects/netflix-1.jpg'],
-    video: '/projects/netflix-demo.mp4',
-    poster: '/projects/netflix-poster.jpg',
-    live: '#',
-    src: 'https://github.com/yourname/netflix-clone'
+    id: 4,
+    title: 'Pg-Life',
+    description: 'Book Pg In Any City.',
+    tech: ['PHP', 'MySql', 'Html', 'Css', 'Boostrap', 'Javascript', 'React'],
+    video: '/projects/videos/pg.mp4',
+    poster: '/projects/images/pg.png',
+    src: 'https://github.com/harshsahu383/PG-LIFE'
   }, 
 ];
 
