@@ -268,11 +268,11 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
           <div className="mt-4 grid md:grid-cols-2 gap-6">
             <div className="bg-white/80 dark:bg-gray-900/70 p-6 rounded-xl shadow">
               <h4 className="font-medium">Get in touch</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Email: <a className="underline" href="mailto:harsh.sahu@example.com">harsh.sahu@example.com</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">LinkedIn: <a className="underline" href="https://linkedin.com/in/harsh-sahu" target="_blank" rel="noreferrer">linkedin.com/in/harsh-sahu</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">GitHub: <a className="underline" href="https://github.com/harshsahu1917" target="_blank" rel="noreferrer">github.com/harshsahu1917</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">LeetCode: <a className="underline" href="https://leetcode.com/harsh_sahu" target="_blank" rel="noreferrer">leetcode.com/harsh_sahu</a></p>
-              <div className="mt-4 text-sm text-gray-600 dark:text-gray-300">Phone: +91-XXXXXXXXXX</div>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Email: <a className="underline" href="mailto:harshsahu1917@gmail.com">Email Me</a></p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">LinkedIn: <a className="underline" href="https://www.linkedin.com/in/harshsahu383/" target="_blank" rel="noreferrer">Linked In</a></p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">GitHub: <a className="underline" href="https://github.com/harshsahu383" target="_blank" rel="noreferrer">Github</a></p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">LeetCode: <a className="underline" href="https://leetcode.com/u/harshsahu383_/" target="_blank" rel="noreferrer">Leetcode</a></p>
+              <div className="mt-4 text-sm text-gray-600 dark:text-gray-300">Phone: +91-7725943124</div>
             </div>
 
             <form onSubmit={handleSubmit} className="bg-white/80 dark:bg-gray-900/70 p-6 rounded-xl shadow" aria-label="contact form">

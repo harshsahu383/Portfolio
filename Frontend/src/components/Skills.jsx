@@ -1,4 +1,3 @@
-// src/components/Skills.jsx
 import React, { useState } from "react";
 
 export default function Skills({ tech = [], tools = [] }) {
@@ -12,7 +11,6 @@ export default function Skills({ tech = [], tools = [] }) {
     <section id="skills" className="mt-16 mb-10">
       <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
-      {/* ------------ TECHNOLOGIES SECTION ------------ */}
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold">Technologies</h3>
         <button
@@ -48,7 +46,7 @@ export default function Skills({ tech = [], tools = [] }) {
         ))}
       </div>
 
-      {/* ------------ TOOLS SECTION ------------ */}
+      {}
       <div className="flex items-center justify-between mt-12">
         <h3 className="text-xl font-semibold">Tools</h3>
         <button
