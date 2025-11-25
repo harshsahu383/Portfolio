@@ -189,7 +189,11 @@ export default function App() {
         {}
         <section id="about" className="mt-12 bg-white/80 dark:bg-gray-900/70 rounded-2xl p-6 backdrop-blur-sm shadow">
           <h2 className="text-2xl font-semibold">About Me</h2>
-          <p className="mt-3 text-gray-700 dark:text-gray-300">I’m a BCA student and an aspiring SDE. I build web apps — from neat frontends to robust backends. I enjoy learning system design and improving my DSA skills to solve real-world problems efficiently.</p>
+          <p className="mt-3 text-gray-700 dark:text-gray-300">Hi, I’m Harsh Sahu, a passionate Full-Stack Developer currently pursuing my BCA and specializing in the MERN stack. I love building real, scalable, and user-friendly web applications that solve everyday problems.
+
+Over the journey, I’ve developed projects like a Netflix Clone, PG-Life, Wonderlust (Airbnb-style app), a Warehouse Management System, and multiple front-end landing pages—each one helping me grow as a developer and understand how real systems work end-to-end.
+
+I’m also strengthening my Data Structures & Algorithms skills to prepare for top tech roles like SDE at Amazon. I believe in consistency, clean code, and learning by building..</p>
 
           <div className="mt-6 grid md:grid-cols-2 gap-4">
             <div>
