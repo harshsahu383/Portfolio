@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 import ProfileImage from './components/ProfileImage';
 
@@ -99,28 +100,6 @@ export default function App() {
 
   function handleChange(e) {
     setForm(p => ({ ...p, [e.target.name]: e.target.value }));
-  }
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    if (!form.name || !form.email || !form.message) { setStatus('Please fill all fields.'); return; }
-    setStatus('sending');
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form)
-      });
-      if (res.ok) {
-        setStatus('Message sent ✅');
-        setForm({ name: '', email: '', message: '' });
-      } else {
-        const j = await res.json();
-        setStatus(j.error || 'Error sending');
-      }
-    } catch (err) {
-      setStatus('Error sending');
-    }
   }
 
   return (
@@ -263,35 +242,7 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
 </section>
 
         {}
-        <section id="contact" className="mt-10">
-          <h3 className="text-xl font-semibold">Contact</h3>
-          <div className="mt-4 grid md:grid-cols-2 gap-6">
-            <div className="bg-white/80 dark:bg-gray-900/70 p-6 rounded-xl shadow">
-              <h4 className="font-medium">Get in touch</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Email: <a className="underline" href="mailto:harshsahu1917@gmail.com">Email Me</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">LinkedIn: <a className="underline" href="https://www.linkedin.com/in/harshsahu383/" target="_blank" rel="noreferrer">Linked In</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">GitHub: <a className="underline" href="https://github.com/harshsahu383" target="_blank" rel="noreferrer">Github</a></p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">LeetCode: <a className="underline" href="https://leetcode.com/u/harshsahu383_/" target="_blank" rel="noreferrer">Leetcode</a></p>
-              <div className="mt-4 text-sm text-gray-600 dark:text-gray-300">Phone: +91-7725943124</div>
-            </div>
-
-            <form onSubmit={handleSubmit} className="bg-white/80 dark:bg-gray-900/70 p-6 rounded-xl shadow" aria-label="contact form">
-              <label className="block text-sm">Name
-                <input required name="name" value={form.name} onChange={handleChange} className="mt-1 block w-full rounded-md border px-3 py-2 bg-transparent" />
-              </label>
-              <label className="block text-sm mt-3">Email
-                <input required name="email" value={form.email} onChange={handleChange} type="email" className="mt-1 block w-full rounded-md border px-3 py-2 bg-transparent" />
-              </label>
-              <label className="block text-sm mt-3">Message
-                <textarea required name="message" value={form.message} onChange={handleChange} rows={4} className="mt-1 block w-full rounded-md border px-3 py-2 bg-transparent" />
-              </label>
-              <div className="mt-4 flex items-center gap-3">
-                <button type="submit" className="px-4 py-2 bg-green-600 text-white rounded-md">Send</button>
-                <div className="text-sm text-gray-600 dark:text-gray-300">{status}</div>
-              </div>
-            </form>
-          </div>
-        </section>
+        <Contact />
       </main>
 
       {}
