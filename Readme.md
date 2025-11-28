@@ -45,30 +45,30 @@ Backend (Render): https://your-backend.onrender.com
 
 ## 📂 Project Structure
 
-Portfolio/
-├── frontend/
-│ ├── public/
-│ │ ├── profile-light.jpg
-│ │ ├── profile-dark.jpg
-│ │ ├── resume.pdf
-│ │ └── projects/
-│ └── src/
-│ ├── components/
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-│
-└── backend/
-├── server.js
-├── routes/
-│ └── contact.js
-├── models/
-│ └── Contact.js
-├── utils/
-│ ├── db.js
-│ └── mailer.js
-├── .env.example
-└── package.json
+- Portfolio/
+- ├── frontend/
+- │ ├── public/
+- │ │ ├── profile-light.jpg
+- │ │ ├── profile-dark.jpg
+- │ │ ├── resume.pdf
+- │ │ └── projects/
+- │ └── src/
+- │ ├── components/
+- │ ├── App.jsx
+- │ ├── main.jsx
+- │ └── index.css
+- │
+- └── backend/
+- ├── server.js
+- ├── routes/
+- │ └── contact.js
+- ├── models/
+- │ └── Contact.js
+- ├── utils/
+- │ ├── db.js
+- │ └── mailer.js
+-├── .env.example
+- └── package.json
 
 ---
 
@@ -79,3 +79,39 @@ Portfolio/
 git clone https://github.com/<your-username>/<repo>.git
 cd <repo>
 ```
+ ## 🔧 Backend Setup
+ ```bash
+ cd backend
+npm install
+cp .env.example .env
+```
+## .env
+```bash
+PORT=5000
+MONGO_URI=your mongodb atlas uri
+SMTP_USER=your@gmail.com
+SMTP_PASS=your_gmail_app_password
+EMAIL_FROM="Your Name <your@gmail.com>"
+```
+## Run backend
+```bash
+npm run dev
+http://localhost:5000 // backend runs on
+```
+
+## 💻 Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+http://localhost:5173 // frontend runs on
+```
+## 🔌 Connecting Frontend → Backend
+Create frontend/.env:
+```bash
+VITE_API_URL=http://localhost:5000
+VITE_API_URL=https://your-backend.onrender.com // production example
+```
+
+
+
