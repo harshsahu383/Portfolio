@@ -1,24 +1,37 @@
+// backend/routes/contact.js
 const express = require('express');
 const router = express.Router();
-const Contact = require('../models/contactmodel');
-const { sendContactEmail } = require('../utils/mailer');
+const Contact = require('../models/Contact');
+const sendMail = require('../utils/mailer');
 
 router.post('/', async (req, res) => {
-  const { name, email, message } = req.body;
+  console.log('POST /api/contact received at', new Date().toISOString());
+  console.log('Body:', req.body);
+
+  const { name, email, message } = req.body || {};
+
   if (!name || !email || !message) {
-    return res.status(400).json({ error: ' Please Fill All Missing fields' });
+    console.warn('Validation failed - missing fields');
+    return res.status(400).json({ status: 'error', error: 'Missing name/email/message' });
   }
 
   try {
-    const doc = new Contact({ name, email, message });
-    await doc.save();
+    const doc = await Contact.create({ name, email, message });
+    console.log('Saved contact id:', doc._id);
 
-    await sendContactEmail({ name, email, message });
+    try {
+      await sendMail({ name, email, message });
+      console.log('Email sent OK');
+    } catch (mailErr) {
+      console.error('Mail error (non-blocking):', mailErr && mailErr.message ? mailErr.message : mailErr);
+      // Return explicit JSON noting the mail issue
+      return res.status(200).json({ status: 'ok', note: 'saved-only', mailError: (mailErr && mailErr.message) ? mailErr.message : 'mail error' });
+    }
 
-    return res.json({ status: 'ok' });
+    return res.status(200).json({ status: 'ok' }); // <-- explicit JSON response
   } catch (err) {
-    console.error('Contact route error:', err);
-    return res.status(500).json({ error: 'Server error' });
+    console.error('Error saving contact:', err && err.message ? err.message : err);
+    return res.status(500).json({ status: 'error', error: 'Server error saving contact' });
   }
 });
 
