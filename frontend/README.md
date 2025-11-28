@@ -69,7 +69,7 @@ const TOOLS = [
 ``` bash
 public/projects/ // project files
 ```
-Add New Project in // Project.jsx
+Add New Project in   **Project.jsx**
 ```bash
 {
   title: "My Project",
