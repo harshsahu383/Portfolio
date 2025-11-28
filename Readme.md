@@ -112,6 +112,33 @@ Create frontend/.env:
 VITE_API_URL=http://localhost:5000
 VITE_API_URL=https://your-backend.onrender.com // production example
 ```
+ ## 🛠 Troubleshooting
+ ```bash
+Issue	Fix
+Vercel can't find package.json	Set root → frontend
+Render can't find backend	Folder name must be backend
+MongoDB auth error	Check MONGO_URI & password
+Emails not sending	Use Gmail App Password
+CORS blocked	Add Vercel URL inside backend CORS
+```
+## 👨‍💻 Author
 
+Harsh Sahu
+📧 harshsahu1917@gmail.com
 
+🔗 GitHub • LinkedIn • LeetCode
 
+## 📜 License
+
+MIT License – Free for anyone to clone & learn
+
+---
+
+# 🎉 Done!
+
+If you want:
+✅ Shields-style badges  
+✅ Banner image  
+✅ GIF demo section  
+✅ Better headings  
+Just tell me **"add badges"** or **"add banner"**.
