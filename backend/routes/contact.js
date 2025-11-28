@@ -1,4 +1,3 @@
-// backend/routes/contact.js
 const express = require('express');
 const router = express.Router();
 const Contact = require('../models/Contact');
@@ -24,11 +23,11 @@ router.post('/', async (req, res) => {
       console.log('Email sent OK');
     } catch (mailErr) {
       console.error('Mail error (non-blocking):', mailErr && mailErr.message ? mailErr.message : mailErr);
-      // Return explicit JSON noting the mail issue
+  
       return res.status(200).json({ status: 'ok', note: 'saved-only', mailError: (mailErr && mailErr.message) ? mailErr.message : 'mail error' });
     }
 
-    return res.status(200).json({ status: 'ok' }); // <-- explicit JSON response
+    return res.status(200).json({ status: 'ok' });
   } catch (err) {
     console.error('Error saving contact:', err && err.message ? err.message : err);
     return res.status(500).json({ status: 'error', error: 'Server error saving contact' });
