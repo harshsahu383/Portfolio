@@ -9,8 +9,16 @@ const connectDB = require('./utils/db');
 const contactRoute = require('./routes/contact');
 
 const app = express();
+const cors = require("cors");
+
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://portfolio-git-main-harshsahu383s-projects.vercel.app/", 
+    "https://portfolio-i6ct.onrender.com"
+  ],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 }));
 app.use(cors());
 app.use(bodyParser.json());
