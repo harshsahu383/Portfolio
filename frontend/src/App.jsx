@@ -246,25 +246,43 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
       </main>
 
       {}
-      <footer className="mt-12 py-8 bg-gradient-to-t from-gray-100 to-transparent dark:from-gray-800">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 items-center">
-          <div>
-            <div className="text-lg font-semibold">Harsh Sahu</div>
-            <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">SDE • Full-Stack • (MERN)</div>
-          </div>
-          <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500 dark:text-gray-400 mt-6">
-            <div>Email: <a href="mailto:harshsahu1917@gmail.com" className="underline">Email Me</a></div>
-            <div>LinkedIn: <a href="https://www.linkedin.com/in/harshsahu383/" target="_blank" rel="noreferrer" className="underline">Linked In</a></div>
-            <div>GitHub: <a href="https://github.com/harshsahu383" target="_blank" rel="noreferrer" className="underline">Github</a></div>
-          </div>
-          <div className="flex gap-3 justify-end">
-            <a href="https://github.com/harshsahu383" target="_blank" rel="noreferrer" aria-label="GitHub" className="px-3 py-2 border rounded">GitHub</a>
-            <a href="https://leetcode.com/u/harshsahu383_/" target="_blank" rel="noreferrer" aria-label="LeetCode" className="px-3 py-2 border rounded">LeetCode</a>
-            <a href="https://www.linkedin.com/in/harshsahu383/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="px-3 py-2 border rounded">LinkedIn</a>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500 dark:text-gray-400 mt-6">© {new Date().getFullYear()} Harsh Sahu </div>
-      </footer>
+    <footer className="mt-12 py-8 bg-gradient-to-t from-gray-100 to-transparent dark:from-gray-800">
+  <div className="max-w-6xl mx-auto px-6 
+                  grid grid-cols-1 md:grid-cols-3 gap-6 
+                  text-center md:text-left items-center">
+
+    {}
+    <div>
+      <div className="text-lg font-semibold">Harsh Sahu</div>
+      <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+        SDE • Full-Stack • (MERN)
+      </div>
+    </div>
+
+    {}
+    <div>
+      <div className="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">
+        Email: <a href="mailto:harshsahu1917@gmail.com" className="underline">Email Me</a><br />
+        LinkedIn: <a className="underline" href="https://www.linkedin.com/in/harshsahu383/" target="_blank">LinkedIn</a><br />
+        GitHub: <a className="underline" href="https://github.com/harshsahu383" target="_blank">Github</a>
+      </div>
+    </div>
+
+    {}
+    <div className="flex justify-center md:justify-end gap-3">
+      <a className="px-4 py-2 border rounded" href="https://github.com/harshsahu383">GitHub</a>
+      <a className="px-4 py-2 border rounded" href="https://leetcode.com/u/harshsahu383_/">LeetCode</a>
+      <a className="px-4 py-2 border rounded" href="https://www.linkedin.com/in/harshsahu383/">LinkedIn</a>
+    </div>
+
+  </div>
+
+  {}
+  <div className="text-center text-sm text-gray-600 dark:text-gray-400 mt-6">
+    © {new Date().getFullYear()} Harsh Sahu
+  </div>
+</footer>
+
     </div>
     
   );

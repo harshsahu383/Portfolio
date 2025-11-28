@@ -6,8 +6,8 @@ A modern, responsive, animated, and full-stack portfolio website built to showca
 ---
 
 ## 🚀 Live Demo  
-Frontend (Vercel): https://your-frontend.vercel.app  
-Backend (Render): https://your-backend.onrender.com  
+Frontend (Vercel): https://harshsahuportfolio.vercel.app/  
+Backend (Render):  https://portfolio-i6ct.onrender.com
 
 ---
 
@@ -125,8 +125,6 @@ CORS blocked	Add Vercel URL inside backend CORS
 
 Harsh Sahu
 📧 harshsahu1917@gmail.com
-
-🔗 GitHub • LinkedIn • LeetCode
 
 ## 📜 License
 
