@@ -9,7 +9,7 @@ const connectDB = require('./utils/db');
 const contactRoute = require('./routes/contact');
 
 const app = express();
-const cors = require("cors");
+app.use(cors());
 
 app.use(cors({
   origin: [
@@ -20,7 +20,6 @@ app.use(cors({
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
 }));
-app.use(cors());
 app.use(bodyParser.json());
 
 
