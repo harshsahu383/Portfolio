@@ -261,7 +261,7 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
 
     {}
     <div>
-      <div className="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">
+      <div className="text-sm text-gray-500 justify-center dark:text-gray-400 mt-2 md:mt-0">
         Email: <a href="mailto:harshsahu1917@gmail.com" className="underline">Email Me</a><br />
         LinkedIn: <a className="underline" href="https://www.linkedin.com/in/harshsahu383/" target="_blank">LinkedIn</a><br />
         GitHub: <a className="underline" href="https://github.com/harshsahu383" target="_blank">Github</a>

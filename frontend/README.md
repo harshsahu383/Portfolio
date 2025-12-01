@@ -103,4 +103,4 @@ Resume not showing	Place resume.pdf inside public/
 Images not loading	Use paths like /projects/image.jpg
 ```
 ## 👨‍💻 Author
-Harsh Sahu
+Harsh Sahu.
