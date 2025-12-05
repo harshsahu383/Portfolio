@@ -227,14 +227,14 @@ I’m also strengthening my Data Structures & Algorithms skills to prepare for t
     </div>
 
     <div className="mt-4 md:mt-0 flex gap-3 items-center">
-      <a href="resume/resume.pdf" download className="btn-download">
+      <a href="resume/Harsh_Resume.pdf" download className="btn-download">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14m7-7H5" />
         </svg>
         Download Resume
       </a>
 
-      <a href="resume/resume.pdf" target="_blank" rel="noreferrer" className="px-4 py-2 border rounded-md text-sm">
+      <a href="resume/Harsh_Resume.pdf" target="_blank" rel="noreferrer" className="px-4 py-2 border rounded-md text-sm">
         View PDF
       </a>
     </div>
